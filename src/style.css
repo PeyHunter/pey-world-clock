@@ -1,0 +1,16 @@
+body {
+ font-family: Raleway, sans-serif;
+}
+
+a {
+    text-decoration: none; 
+}
+
+footer {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+
+.container {
+    min-width: 1200px
+}
