@@ -1,5 +1,6 @@
 body {
  font-family: Raleway, sans-serif;
+
 }
 
 h1 {
@@ -15,6 +16,7 @@ footer {
     font-weight: regular;
     font-size: 13px;
     text-align: center;
+    margin-top: 7px;
 }
 select { 
     min-width: 100%;
@@ -29,8 +31,36 @@ select {
     margin-top: 100px;
     border: solid grey 1px;
     border-radius: 15px;
+box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+background-color: white;
 }
+
 .cityName {
+    display:flex;
+    justify-content: space-between;
     margin-top: 20px;
 }
 
+
+.time {text-align: right; 
+font-size: 40px;
+font-weight: 500  ;
+margin-top: 25px;}
+
+.time small { 
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.date {
+    margin-left: 42px;
+    margin-bottom: 5px;
+}
+
+.clock-video {
+   margin-top: -7px;
+    max-width: 60px;
+    align-items: right;
+    display: flex;
+    margin-left: auto;
+}
