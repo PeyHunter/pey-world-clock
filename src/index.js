@@ -73,6 +73,10 @@ function showSelectedCity(event) {
         clearInterval(intervalId);
     }
     let cityTimeZone = event.target.value;
+    if (cityTimeZone === "current-location") {
+        cityTimeZone = moment.tz.guess()
+    }
+
     let cityName = cityTimeZone.replace(`_`, ``).split("/")[1]
     let citiesElement = document.querySelector(".cityList");
     
@@ -82,10 +86,11 @@ function showSelectedCity(event) {
         'Kabul': '🇦🇫',
         'Berlin': '🇩🇪',
         'Dakar': '🇸🇳',
+        'current-location': '📍',
         // Add more cities and their corresponding emojis here
     };
     
-    let emoji = cityEmojis[cityName] || '';
+    let emoji = cityEmojis[cityName] || '📍';
     
     function updateCityTime () {
         let cityTime = moment().tz(cityTimeZone)
