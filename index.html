@@ -33,7 +33,7 @@
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <h1>World Clock</h1>
+          <h1 id="worldClock">World Clock</h1>
         </div>
         <div class="col-6">
           <img
@@ -49,23 +49,23 @@
       <br />
       <select name="citySelection" id="citySelection">
         <option value="">Select another city</option>
-        <option value="rome">🇮🇹 Rome</option>
-        <option value="bangkok">🇹🇭 Bangkok</option>
-        <option value="kabul">🇦🇫 Kabul</option>
-        <option value="berlin">🇩🇪 Berlin</option>
-        <option value="dakar">🇸🇳 Dakar</option>
+        <option value="Europe/Rome">🇮🇹 Rome</option>
+        <option value="Asia/Bangkok">🇹🇭 Bangkok</option>
+        <option value="Asia/Kabul">🇦🇫 Kabul</option>
+        <option value="Europe/Berlin">🇩🇪 Berlin</option>
+        <option value="Africa/Dakar">🇸🇳 Dakar</option>
       </select>
       <br /><br />
 
-      <div class="cityList">
-        <div class="row">
-          <div class="col-6">
-            <h2 class="cityName" id="atlanta">🇺🇸 Atlanta</h2>
-            <div class="date" id="atlantaDate"></div>
-          </div>
-          <div class="col-6">
-            <div class="time" id="atlantaTime">
-              <small id="#atlantaAM"></small>
+      <div class="cityList" id="cities">
+        <div class="atlanta">
+          <div class="row">
+            <div class="col-6">
+              <h2 class="cityName" id="atlanta">🇺🇸 Atlanta</h2>
+              <div class="date" id="atlantaDate"></div>
+            </div>
+            <div class="col-6">
+              <div class="time" id="atlantaTime"></div>
             </div>
           </div>
         </div>
@@ -75,19 +75,16 @@
             <div class="date" id="copenhagenDate"></div>
           </div>
           <div class="col-6">
-            <div class="time" id="copenhagenTime">
-              <small id="copenhagenAM"></small>
-            </div>
+            <div class="time" id="copenhagenTime"></div>
           </div>
         </div>
-
         <div class="row">
           <div class="col-6">
             <h2 class="cityName" id="beijing">🇨🇳 Beijing</h2>
             <div class="date" id="beijingDate"></div>
           </div>
           <div class="col-6">
-            <div class="time" id="beijingTime"><small> </small></div>
+            <div class="time" id="beijingTime"></div>
           </div>
         </div>
         <div class="row">
@@ -96,9 +93,7 @@
             <div class="date" id="melbourneDate"></div>
           </div>
           <div class="col-6">
-            <div class="time" id="melbourneTime">
-              <small id="melbourneAM"></small>
-            </div>
+            <div class="time" id="melbourneTime"></div>
           </div>
         </div>
         <div class="row">
@@ -107,7 +102,7 @@
             <div class="date" id="hanoiDate"></div>
           </div>
           <div class="col-6">
-            <div class="time" id="hanoiTime"><small></small></div>
+            <div class="time" id="hanoiTime"></div>
           </div>
         </div>
       </div>

@@ -1,11 +1,15 @@
 body {
  font-family: Raleway, sans-serif;
- background-color: grey;
+ background-color: rgb(43, 43, 43);
 
 }
 
 h1 {
     font-weight: bolder;
+}
+
+h1:hover {
+    cursor: pointer;
 }
 
 a {
