@@ -1,5 +1,4 @@
-
-  function displayTimes() {
+ function displayTimes() {
     // ... your existing code
     let atlantaDateElement = document.querySelector("#atlantaDate");
     let atlantaTimeElement = document.querySelector("#atlantaTime");
